@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SolderPro</title>
+   <link href="https://fonts.googleapis.com/css?family=Teko:300,regular,500,600,700" rel="stylesheet" />
+   <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet" />
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/adaptive.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <a href="" class="header__logo logo">Solder<b>P</b>ro</a>
+            <nav class="header__nav" id="nav-menu">
+               <div class="header__block_1">
+                  <ul class="header__list">
+                     <li class="header__item"><a href="#" class="header__link header__link_i1">
+                           <p>HOME</p>
+                        </a></li>
+                     <li class="header__item"><a href="#" class="header__link header__link_i2">
+                           <p>PRODOTTI</p>
+                        </a></li>
+                     <li class="header__item"><a href="#" class="header__link header__link_i3">
+                           <p>CHI SIAMO</p>
+                        </a></li>
+                     <li class="header__item"><a href="#" class="header__link header__link_i4">
+                           <p>ASSISTENZA</p>
+                        </a></li>
+                  </ul>
+               </div>
+               <div class="header__block_2">
+                  <ul class="header__list">
+                     <li class="header__item"><a href="#" class="header__link header__link_icon"><img src="icons/05.svg"
+                              alt=""></a></li>
+                     <li class="header__item"><a href="#" class="header__link header__link_icon"><img src="icons/06.svg"
+                              alt=""></a></li>
+                     <li class="header__item"><a href="#" class="header__link header__link_icon"><img src="icons/07.svg"
+                              alt=""></a></li>
+                  </ul>
+               </div>
+               <a href="#" class="header__button">ACQUISTA</a>
+            </nav>
+            <div class="header__burger">
+               <img src="icons/menu.svg" onclick="ToggleMenu()" alt="" id="open-burger" class="active">
+               <img src="icons/close.svg" onclick="ToggleMenu()" alt="" id="close-burger">
+            </div>
+            <div class="header__dec"><img src="img/01.png" alt=""></div>
+         </div>
+      </header>
+      <main class="main">
+         <section class="main__into intro">
+            <div class="intro__container">
+               <nav class="intro__nav">
+                  <ul class="intro__list">
+                     <li class="intro__item text-item">
+                        <h1 class="intro__label">Qualità dei prodotti</h1>
+                        <p class="intro__text">Per garantire la massima affidabilità</p>
+                        <img src="img/02.png" alt="" class="intro__line">
+                     </li>
+                     <li class="intro__item text-item">
+                        <h1 class="intro__label">Ampia gamma di <b>prodotti</b></h1>
+                        <img src="img/03.png" alt="" class="intro__line">
+                     </li>
+                     <li class="intro__item text-item">
+                        <h1 class="intro__label">Competenza e servizio</h1>
+                        <p class="intro__text">Assistenza post-vendita 24 ore su 24</p>
+                        <img src="img/04.png" alt="" class="intro__line">
+                     </li>
+                     <li class="intro__item text-item">
+                        <h1 class="intro__label">Esperienza nel settore</h1>
+                        <p class="intro__text">Conoscenza del mercato e dei prodotti</p>
+                        <img src="img/05.png" alt="" class="intro__line">
+                     </li>
+                     <li class="intro__item text-item">
+                        <h1 class="intro__label">Facilità d'uso del sito <b>web</b></h1>
+                        <img src="img/03.png" alt="" class="intro__line">
+                     </li>
+                     <li class="intro__item check-item">
+                        <div id="check-1" class="intro__check" onclick="ToggleCheck()">
+                           <div class="checkbox checked" id="checkbox-1"><img src="icons/11.svg" alt=""></div>
+                           <p>ECCELLENZA</p>
+                        </div>
+                        <div id="check-2" class="intro__check" onclick="ToggleCheck()">
+                           <div class="checkbox" id="checkbox-2"><img src="icons/11.svg" alt=""></div>
+                           <p>SALDATURA</p>
+                        </div>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </section>
+         <section class="main__prods prods">
+            <div class="prods__container">
+               <div class="prods__title title-prods">
+                  <div class="title-prods__suptitle">Prodotti</div>
+                  <div class="title-prods__body">
+                     <div class="title-prods__label">Saldatura Pro</div>
+                     <div class="title-prods__buttons">
+                        <div class="title-prods__button title-prods__button_left" onclick="plusSlides(1)"><img
+                              src="icons/08.svg" alt=""></div>
+                        <div class="title-prods__button title-prods__button_right" onclick="plusSlides(-1)"><img
+                              src="icons/09.svg" alt=""></div>
+                     </div>
+                     <div class="title-prods__decoration"><img src="img/06.png" alt=""></div>
+                  </div>
+               </div>
+               <div class="prods__items slide">
+                  <div class="prods__item item-prods">
+                     <div class="item-prods__img"><img src="img/12.png" alt=""></div>
+                     <div class="item-prods__body">
+                        <div class="item-prods__title">Solder Pro Weldix MP200</div>
+                        <div class="item-prods__description">Uno strumento versatile per la saldatura e il taglio, con 5
+                           funzioni in 1. Robusto e duraturo. Ideale per progetti di
+                           bricolage e lavori professionali.</div>
+                        <div class="item-prods__buy">
+                           <div class="item-prods__price">$999</div>
+                           <a href="" class="item-prods__button"><img src="icons/10.svg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="prods__item item-prods">
+                     <div class="item-prods__img"><img src="img/13.png" alt=""></div>
+                     <div class="item-prods__body">
+                        <div class="item-prods__title">Solder Pro WELDIX CT2050</div>
+                        <div class="item-prods__description">Saldatore e taglierina 7 in 1 molto potente e versatile.
+                           Ideale per progetti di saldatura e taglio di precisione su
+                           diversi materiali per una maggiore sicurezza.</div>
+                        <div class="item-prods__buy">
+                           <div class="item-prods__price">$1050</div>
+                           <a href="" class="item-prods__button"><img src="icons/10.svg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="prods__item item-prods">
+                     <div class="item-prods__img"><img src="img/14.png" alt=""></div>
+                     <div class="item-prods__body">
+                        <div class="item-prods__title">Solder Pro YWM-200</div>
+                        <div class="item-prods__description">Saldatore multi-processo in alluminio 4 in 1. Ideale per
+                           saldature di precisione su materiali in alluminio e leghe
+                           leggere. Con tecnologia avanzata per una maggiore efficienza.</div>
+                        <div class="item-prods__buy">
+                           <div class="item-prods__price">$855</div>
+                           <a href="" class="item-prods__button"><img src="icons/10.svg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="prods__item item-prods">
+                     <div class="item-prods__img"><img src="img/15.png" alt=""></div>
+                     <div class="item-prods__body">
+                        <div class="item-prods__title">solder pro MIG-205DS-B:</div>
+                        <div class="item-prods__description">l saldatore MIG-205DS-B è ideale per la saldatura di
+                           materiali in alluminio e leghe leggere, con molteplici funzioni per
+                           adattarsi a diverse applicazioni di saldatura</div>
+                        <div class="item-prods__buy">
+                           <div class="item-prods__price">$755</div>
+                           <a href="" class="item-prods__button"><img src="icons/10.svg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="prods__item item-prods">
+                     <div class="item-prods__img"><img src="img/16.png" alt=""></div>
+                     <div class="item-prods__body">
+                        <div class="item-prods__title">SOLDER PRO 250A</div>
+                        <div class="item-prods__description">Il saldatore YesWelder 250A è ideale per la saldatura di
+                           materiali in alluminio, con la possibilità di utilizzare una
+                           spool gun per una maggiore precisione e controllo.</div>
+                        <div class="item-prods__buy">
+                           <div class="item-prods__price">$855</div>
+                           <a href="" class="item-prods__button"><img src="icons/10.svg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="prods__item item-prods">
+                     <div class="item-prods__img"><img src="img/17.png" alt=""></div>
+                     <div class="item-prods__body">
+                        <div class="item-prods__title">SOLDER PRO YWT-200DC</div>
+                        <div class="item-prods__description">"Il saldatore YWT-200DC è dotato di tecnologia Lift TIG e
+                           Spot TIG, ideale per saldature di precisione su diversi
+                           materiali, con una facile regolazione della corrente</div>
+                        <div class="item-prods__buy">
+                           <div class="item-prods__price">$1155</div>
+                           <a href="" class="item-prods__button"><img src="icons/10.svg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="prods__items slide">
+                  <div class="prods__item item-prods">
+                     <div class="item-prods__img"><img src="img/13.png" alt=""></div>
+                     <div class="item-prods__body">
+                        <div class="item-prods__title">Solder Pro WELDIX CT2050</div>
+                        <div class="item-prods__description">Saldatore e taglierina 7 in 1 molto potente e versatile.
+                           Ideale per progetti di saldatura e taglio di precisione su
+                           diversi materiali per una maggiore sicurezza.</div>
+                        <div class="item-prods__buy">
+                           <div class="item-prods__price">$1050</div>
+                           <a href="" class="item-prods__button"><img src="icons/10.svg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="prods__item item-prods">
+                     <div class="item-prods__img"><img src="img/12.png" alt=""></div>
+                     <div class="item-prods__body">
+                        <div class="item-prods__title">Solder Pro Weldix MP200</div>
+                        <div class="item-prods__description">Uno strumento versatile per la saldatura e il taglio, con 5
+                           funzioni in 1. Robusto e duraturo. Ideale per progetti di
+                           bricolage e lavori professionali.</div>
+                        <div class="item-prods__buy">
+                           <div class="item-prods__price">$999</div>
+                           <a href="" class="item-prods__button"><img src="icons/10.svg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="prods__item item-prods">
+                     <div class="item-prods__img"><img src="img/14.png" alt=""></div>
+                     <div class="item-prods__body">
+                        <div class="item-prods__title">Solder Pro YWM-200</div>
+                        <div class="item-prods__description">Saldatore multi-processo in alluminio 4 in 1. Ideale per
+                           saldature di precisione su materiali in alluminio e leghe
+                           leggere. Con tecnologia avanzata per una maggiore efficienza.</div>
+                        <div class="item-prods__buy">
+                           <div class="item-prods__price">$855</div>
+                           <a href="" class="item-prods__button"><img src="icons/10.svg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="prods__item item-prods">
+                     <div class="item-prods__img"><img src="img/15.png" alt=""></div>
+                     <div class="item-prods__body">
+                        <div class="item-prods__title">solder pro MIG-205DS-B:</div>
+                        <div class="item-prods__description">l saldatore MIG-205DS-B è ideale per la saldatura di
+                           materiali in alluminio e leghe leggere, con molteplici funzioni per
+                           adattarsi a diverse applicazioni di saldatura</div>
+                        <div class="item-prods__buy">
+                           <div class="item-prods__price">$755</div>
+                           <a href="" class="item-prods__button"><img src="icons/10.svg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="prods__item item-prods">
+                     <div class="item-prods__img"><img src="img/16.png" alt=""></div>
+                     <div class="item-prods__body">
+                        <div class="item-prods__title">SOLDER PRO 250A</div>
+                        <div class="item-prods__description">Il saldatore YesWelder 250A è ideale per la saldatura di
+                           materiali in alluminio, con la possibilità di utilizzare una
+                           spool gun per una maggiore precisione e controllo.</div>
+                        <div class="item-prods__buy">
+                           <div class="item-prods__price">$855</div>
+                           <a href="" class="item-prods__button"><img src="icons/10.svg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="prods__item item-prods">
+                     <div class="item-prods__img"><img src="img/17.png" alt=""></div>
+                     <div class="item-prods__body">
+                        <div class="item-prods__title">SOLDER PRO YWT-200DC</div>
+                        <div class="item-prods__description">"Il saldatore YWT-200DC è dotato di tecnologia Lift TIG e
+                           Spot TIG, ideale per saldature di precisione su diversi
+                           materiali, con una facile regolazione della corrente</div>
+                        <div class="item-prods__buy">
+                           <div class="item-prods__price">$1155</div>
+                           <a href="" class="item-prods__button"><img src="icons/10.svg" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="main__feat feat">
+            <div class="faet__container">
+               <div class="feat_img"><img src="img/18.png" alt=""></div>
+               <div class="feat__body">
+                  <div class="feat__item item-feat">
+                     <div class="item-feat__label">
+                        <div class="item-feat__img"><img src="img/07.svg" alt=""></div>
+                        <div class="item-feat__title">Qualità e affidabilità</div>
+                     </div>
+                     <div class="item-feat__text">SolderPro offre prodotti di alta qualità e affidabili, progettati con
+                        tecnologia avanzata e materiali resistenti. Ogni
+                        saldatore è testato per garantire la massima efficienza e prestazioni costanti nel tempo.</div>
+                  </div>
+                  <div class="feat__item item-feat">
+                     <div class="item-feat__label">
+                        <div class="item-feat__img"><img src="img/08.svg" alt=""></div>
+                        <div class="item-feat__title">Versatilità e funzionalità</div>
+                     </div>
+                     <div class="item-feat__text">I saldatori SolderPro offrono molteplici funzionalità per adattarsi a
+                        diverse applicazioni di saldatura. Dalle saldature
+                        MIG alle saldature TIG, ai tagli elettrici, SolderPro ha il saldatore giusto per ogni esigenza.
+                     </div>
+                  </div>
+                  <div class="feat__item item-feat">
+                     <div class="item-feat__label">
+                        <div class="item-feat__img"><img src="img/09.svg" alt=""></div>
+                        <div class="item-feat__title">SUPPORTO E ASSISTENZA TECNICA</div>
+                     </div>
+                     <div class="item-feat__text">Il l team di esperti è sempre disponibile per rispondere alle domande
+                        e fornire supporto tecnico, garantendo una
+                        soluzione rapida ed efficiente per qualsiasi problema o necessità del cliente.</div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="about">
+            <div class="about__container">
+               <img src="img/10.png" alt="" class="about__line">
+               <div class="about__label">
+                  <div class="about__suptitle">Articoli</div>
+                  <div class="about__title">L’ARTE DELLA SALDATURA</div>
+               </div>
+               <div class="about__body">
+                  <div class="about__items">
+                     <div class="about__item item-about">
+                        <div class="item-about__img"><img src="img/19.jpg" alt=""></div>
+                        <div class="item-about__body">
+                           <div class="item-about__title">Guida pratica alla saldatura: configurazione per principianti
+                           </div>
+                           <div class="item-about__text">Scopri come preparare la tua saldatrice MIG, regolare i
+                              parametri e utilizzarla correttamente per ottenere saldature di
+                              qualità, anche se sei alle prime armi</div>
+                           <a href="" class="item-about__link">
+                              <p>Leggi l’articolo</p>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="about__item item-about">
+                        <div class="item-about__img"><img src="img/20.jpg" alt=""></div>
+                        <div class="item-about__body">
+                           <div class="item-about__title">15 progetti di saldatura per guadagnare da casa</div>
+                           <div class="item-about__text">Scopri come mettere a frutto la tua passione per la saldatura e
+                              avviare un'attività profittevole da casa tua, con 15
+                              progetti di saldatura facili e redditizi per creare oggetti unici e personalizzati.</div>
+                           <a href="" class="item-about__link">
+                              <p>Leggi l’articolo</p>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="about__item item-about">
+                        <div class="item-about__img"><img src="img/21.png" alt=""></div>
+                        <div class="item-about__body">
+                           <div class="item-about__title">Crea una ciotola autoirrigante per il tuo amico a quattro
+                              zampe</div>
+                           <div class="item-about__text">Realizza in modo facile e veloce una ciotola autoirrigante per
+                              cani o gatti, che si riempie automaticamente con l'acqua
+                              fresca per garantire idratazione continua e igiene.</div>
+                           <a href="" class="item-about__link">
+                              <p>Leggi l’articolo</p>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="" class="about__button">SCOPRI GLI ARTICOLI</a>
+               </div>
+            </div>
+         </section>
+         <section class="main__ben ben">
+            <div class="ben__container">
+               <div class="ben__item item-ben">
+                  <div class="item-ben__img"><img src="img/22.svg" alt=""></div>
+                  <div class="item-ben__title">TOP QUALITY</div>
+                  <div class="item-ben__text">Solder Pro si impegna a fornire solo prodotti di alta qualità, testati e
+                     affidabili per tutte le esigenze</div>
+               </div>
+               <div class="ben__item item-ben">
+                  <div class="item-ben__img"><img src="img/23.svg" alt=""></div>
+                  <div class="item-ben__title">INNOVAZIONE</div>
+                  <div class="item-ben__text">Continua ricerca di nuove tecnologie e soluzioni innovative per migliorare
+                     la saldatura</div>
+               </div>
+               <div class="ben__item item-ben">
+                  <div class="item-ben__img"><img src="img/24.svg" alt=""></div>
+                  <div class="item-ben__title">AFFIDABILITA’</div>
+                  <div class="item-ben__text">Un servizio clienti affidabile, pronto ad assistere i clienti in ogni fase
+                     del processo di acquisto e post-vendita</div>
+               </div>
+               <div class="ben__item item-ben">
+                  <div class="item-ben__img"><img src="img/25.svg" alt=""></div>
+                  <div class="item-ben__title">SOSTENIBILITà</div>
+                  <div class="item-ben__text">Impegno nella tutela dell'ambiente, adottando processi produttivi e
+                     rispettosi dell'ecosistema.</div>
+               </div>
+               <div class="ben__item item-ben">
+                  <div class="item-ben__img"><img src="img/26.svg" alt=""></div>
+                  <div class="item-ben__title">ACCESSIBILITA’</div>
+                  <div class="item-ben__text">Solder Pro vuole rendere la saldatura accessibile a tutti, promuovendo la
+                     formazione e l'educazione alla saldatura.</div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <img class="footer__line" src="img/10.png" alt="">
+            <div class="footer__feetback feet">
+               <div class="feet__label">
+                  <h1>Le ultime novità SUI nostri prodotti</h1>
+                  <h2>Resta sempre aggiornato sulle ultime tendenze e scopri in anteprima i nostri nuovi prodottI.</h2>
+               </div>
+               <div class="feet__form">
+                  <label for="">
+                     <input type="text" placeholder="Inserisci la tua email" name="" id="" class="feet__input">
+                     <button class="feet__btn">INVIA</button>
+                  </label>
+                  <p>By subscribing you agree to with our <a href="">Privacy Policy</a></p>
+               </div>
+            </div>
+            <nav class="footer__nav">
+               <ul class="footer__list">
+                  <li class="footer__item">
+                     <h1 class="footer__title">SERVIZIO CLIENTI</h1>
+                  </li>
+                  <li class="footer__item"><a href="" class="footer__link">Domande frequenti</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Contattaci</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Politica di rimborso</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Politica di spedizione</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Politica di garanzia</a></li>
+               </ul>
+               <ul class="footer__list">
+                  <li class="footer__item">
+                     <h1 class="footer__title">INFORMAZIONE</h1>
+                  </li>
+                  <li class="footer__item"><a href="" class="footer__link">Chi siamo</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Termini di servizio</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Politica sulla riservatezza</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Gestione dei Cookie</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Paga con Satispay</a></li>
+               </ul>
+               <ul class="footer__list">
+                  <li class="footer__item">
+                     <h1 class="footer__title">Risorse</h1>
+                  </li>
+                  <li class="footer__item"><a href="" class="footer__link">Blog</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Fedeltà e premi</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Programma affiliato</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Vendita all’ingrosso</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Marchi</a></li>
+               </ul>
+               <ul class="footer__list">
+                  <li class="footer__item">
+                     <h1 class="footer__title">PRODOTTI</h1>
+                  </li>
+                  <li class="footer__item"><a href="" class="footer__link">Tutti i prodotti</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Cerca per marca</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Filtro di ricerca</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Specifiche tecniche</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Recensioni</a></li>
+               </ul>
+               <ul class="footer__list">
+                  <li class="footer__item">
+                     <h1 class="footer__title">Account</h1>
+                  </li>
+                  <li class="footer__item"><a href="" class="footer__link">Crea un account</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Accedi al tuo account</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Storico ordini</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Tracking spedizione</a></li>
+               </ul>
+               <ul class="footer__list">
+                  <li class="footer__item">
+                     <h1 class="footer__title">Profili social</h1>
+                  </li>
+                  <li class="footer__item"><a href="" class="footer__link">You Tube</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Facebook</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Instagram</a></li>
+                  <li class="footer__item"><a href="" class="footer__link">Tik Tok</a></li>
+               </ul>
+            </nav>
+            <div class="footer__foot">
+               <div class="footer__logo logo">Solder<b>P</b>ro</div>
+               <h1 class="footer__lic">© 2023 Solder Pro. All rights reserved.</h1>
+               <div class="footer__dec"><img src="img/27.png" alt=""></div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
